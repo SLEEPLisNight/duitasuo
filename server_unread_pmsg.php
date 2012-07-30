@@ -60,7 +60,6 @@ while ($row = mysql_fetch_assoc($duitasuo_pmsg))
  
  if ($pmsg_reply_receiver == 1 && $readit_reply == 0){
  $unread++;
- } else {
  }
  
  $reply = 1;
