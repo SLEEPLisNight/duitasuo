@@ -1,0 +1,63 @@
+#campus_search_input {
+  background: white;
+  padding-top: 5px;
+  padding-right: 5px;
+  padding-bottom: 5px;
+  padding-left: 5px;
+  width: 300px;
+  height: 34px;
+  border: 1px solid #467a9c;
+  font-size: 18px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-shadow: white 1px 1px 1px;
+  color: #6A6A6A;
+  -webkit-box-shadow: 0px 1px 0px #75a7c8;
+  float: left;
+  vertical-align: top;
+  background-image: url('images/search.png');
+  background-repeat: no-repeat;
+  background-position: right center; 
+}
+
+.choose_school {
+padding: 5px;
+color: #6A6A6A;
+float: left;
+width: 298px;
+}
+
+.choose_school_onmouseover {
+padding: 5px;
+color: #6A6A6A;
+background-color: #DDEDCC;
+cursor: pointer;
+float: left;
+width: 298px;
+}
+
+.choose_school_more {
+font-size: 14px;
+padding: 3px;
+color: #6A6A6A;
+font-weight: bold;
+background-color: #DDEDCC;
+float: left;
+width: 298px;
+}
+
+.signup {
+position: absolute;
+top: 300px;
+left: 50%;
+width: 300px;
+float: left;
+margin-top: 0px;
+margin-left: -150px;
+visibility: hidden;
+-webkit-border-radius: 8px;
+border-radius: 8px;
+background-color: rgba(82, 82, 82, 0.7);
+-ms-filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#B2525252,endColorstr=#B2525252);
+filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#B2525252,endColorstr=#B2525252);
+padding: 10px 10px 0px 10px;
+}

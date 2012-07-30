@@ -1,0 +1,45 @@
+<?php 
+header('Content-type: text/html; charset=utf-8');
+include 'connect_to_mysql.php';  // connect to mysql database.
+?>
+
+<html>
+<head>
+   <title>Earth News</title>
+   <link href="index.css" rel="stylesheet" type="text/css" />
+   <!--[if IE]>
+   <link href="index_ie.css" rel="stylesheet" type="text/css" />
+   <![endif]-->
+   <script type="text/javascript" src="https://www.google.com/jsapi?key=ABQIAAAAif6x9Z0DyApJDlDvSbyoPxTpI_if6Kb2e4VVkCxKiNY8sCmkZxTC6CxityvUYH2ogyeetQdr1SE-YA"> </script>
+   <script type="text/javascript" src="index.js" ></script>
+   <script type="text/javascript">
+   google.load("earth", "1");  //start up google earth
+   google.load("maps", "2");   //start up google map
+   </script>
+  </head>
+  <body onload="init()">
+	
+	<div id="header">
+	
+	<!-- fly to table -->
+	<table class="fly_to">
+	<tr><td><label >Fly to(City name e.g. Montreal): </label></td><td><input id="location" type="text" value=""></td><td><input type="button" value="Fly To There" onclick="fly_to()"></td></tr>
+	</table>
+	
+	<!-- camera and view info table -->
+	<table class="camera_info">
+	<tr><td><label >Camera Height: </label></td><td><input id="camaraRange" type="text" value=""></td><td><label >Priority view: </label></td><td><input id="priorityview" type="text" value=""></td></tr>
+	</table>
+	
+	<!-- addplacemarker switch table-->
+	<table class="add_placemarker_switch">
+	<tr><td><label >Add Placemarker: </label></td><td><input id="addPlacemarkSwitchButton" type="button" value="Turn On" onclick="turnAddPlacemarkSwitch()"></td></tr>
+	</table>
+	
+	</div>
+	
+	<!-- google earth will go here -->
+	<div id="map3d"></div>
+	
+    </body>
+</html>

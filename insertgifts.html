@@ -1,0 +1,32 @@
+﻿<script type="text/javascript">
+
+function submit(){
+var name = encodeURIComponent(document.getElementById("name").value);
+var descr = encodeURIComponent(document.getElementById("descr").value);
+var price = encodeURIComponent(document.getElementById("price").value);
+
+if (window.XMLHttpRequest)
+  {// code for IE7+, Firefox, Chrome, Opera, Safari
+  xmlhttp=new XMLHttpRequest();
+  }
+else
+  {// code for IE6, IE5
+  xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+  }
+xmlhttp.onreadystatechange=function()
+  {
+  if (xmlhttp==4 && xmlhttp.status==200)
+    {
+	
+	}
+  }
+xmlhttp.open("GET","insertgifts.php?name="+name+"&descr="+descr+"&price="+price,true);
+xmlhttp.send();	
+}
+
+</script>
+
+名字：<input type="text" id="name" /><br>
+描述：<input type="text" id="descr" /><br>
+价钱：<input type="text" id="price" /><br>
+<button onclick="submit()">提交</button>
